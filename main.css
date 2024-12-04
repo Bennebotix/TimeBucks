@@ -1,0 +1,33 @@
+.row {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: #326384;
+  height: 30dvw;
+}
+
+.row:nth-child(even) {
+  grid-template-columns: 70% 30%;
+  background-color: #2b3d4a;
+}
+
+.img {
+  width: 30dvw;
+  max-width: 30dvw;
+  overflow: hidden;
+}
+
+.img > img {
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  padding: 10px;
+  width: 70dvw;
+  text-align: center;
+  color: #fff;
+  font-size: 2dvw;
+}
